@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="anBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#anBg)" />
+  <rect x="1" y="1" width="798" height="498" rx="15" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Container -->
+  <rect x="40" y="30" width="720" height="440" rx="12" fill="#0b0f19" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Header -->
+  <rect x="40" y="30" width="720" height="48" rx="12" fill="#0f172a" />
+  <circle cx="64" cy="54" r="5" fill="#ef4444" />
+  <circle cx="80" cy="54" r="5" fill="#f59e0b" />
+  <circle cx="96" cy="54" r="5" fill="#10b981" />
+  <text x="120" y="58" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Growth Intelligence & Multi-Channel Attribution Engine</text>
+  <rect x="620" y="42" width="120" height="24" rx="6" fill="#1e293b" />
+  <text x="680" y="58" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Live Supabase Sync</text>
+
+  <!-- Metric row -->
+  <g transform="translate(60, 95)">
+    <rect width="150" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="16" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Monthly Recurring</text>
+    <text x="16" y="54" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="700">$184.2K</text>
+    <text x="100" y="52" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600">+24%</text>
+
+    <rect x="170" y="0" width="150" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="186" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Blended CAC</text>
+    <text x="186" y="54" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="700">$84.10</text>
+    <text x="270" y="52" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600">-18%</text>
+
+    <rect x="340" y="0" width="150" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="356" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Active Accounts</text>
+    <text x="356" y="54" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="700">1,940</text>
+    <text x="438" y="52" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">+112</text>
+
+    <rect x="510" y="0" width="170" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="526" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Time to Report</text>
+    <text x="526" y="54" fill="#34d399" font-family="system-ui, sans-serif" font-size="22" font-weight="700">&lt;1 Sec</text>
+    <text x="618" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10.5">was 3 days</text>
+  </g>
+
+  <!-- Big Interactive Chart Mockup -->
+  <g transform="translate(60, 190)">
+    <rect width="680" height="260" rx="10" fill="#111827" stroke="#1e293b" stroke-width="1" />
+    <text x="24" y="32" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Attribution Revenue Trend (Last 30 Days)</text>
+
+    <!-- Grid lines -->
+    <line x1="24" y1="70" x2="656" y2="70" stroke="#1f2937" stroke-dasharray="3 3" />
+    <line x1="24" y1="120" x2="656" y2="120" stroke="#1f2937" stroke-dasharray="3 3" />
+    <line x1="24" y1="170" x2="656" y2="170" stroke="#1f2937" stroke-dasharray="3 3" />
+    <line x1="24" y1="220" x2="656" y2="220" stroke="#374151" />
+
+    <!-- Chart Path -->
+    <path d="M 30 200 Q 120 180, 200 150 T 360 130 T 480 90 T 640 60 L 640 220 L 30 220 Z" fill="url(#chartGradient)" />
+    <path d="M 30 200 Q 120 180, 200 150 T 360 130 T 480 90 T 640 60" stroke="#6366f1" stroke-width="3" stroke-linecap="round" fill="none" />
+    
+    <!-- Secondary trend line -->
+    <path d="M 30 210 Q 120 195, 200 180 T 360 160 T 480 140 T 640 110" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+
+    <circle cx="480" cy="90" r="5" fill="#6366f1" stroke="#ffffff" stroke-width="2" />
+    <circle cx="640" cy="60" r="5" fill="#6366f1" stroke="#ffffff" stroke-width="2" />
+
+    <!-- Tooltip -->
+    <rect x="420" y="35" width="120" height="42" rx="6" fill="#090d16" stroke="#4f46e5" stroke-width="1" />
+    <text x="432" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Day 24 Attributed</text>
+    <text x="432" y="68" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">$16,420 MRR</text>
+  </g>
+</svg>

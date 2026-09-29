@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="invBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#invBg)" />
+  <rect x="1" y="1" width="798" height="498" rx="15" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- App Window Container -->
+  <rect x="40" y="30" width="720" height="440" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="40" y="30" width="720" height="44" rx="12" fill="#0f172a" />
+  <rect x="40" y="62" width="720" height="12" fill="#0f172a" />
+  <line x1="40" y1="74" x2="760" y2="74" stroke="#334155" stroke-width="1" />
+  
+  <circle cx="64" cy="52" r="5" fill="#ef4444" />
+  <circle cx="80" cy="52" r="5" fill="#f59e0b" />
+  <circle cx="96" cy="52" r="5" fill="#10b981" />
+  <text x="400" y="56" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="middle">inventory.enterprise.internal / live-dashboard</text>
+
+  <!-- Sidebar -->
+  <rect x="40" y="74" width="160" height="396" fill="#090d16" fill-opacity="0.6" />
+  <line x1="200" y1="74" x2="200" y2="470" stroke="#334155" stroke-width="1" />
+  
+  <!-- Nav items -->
+  <rect x="56" y="96" width="128" height="32" rx="6" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1" />
+  <text x="76" y="117" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="12" font-weight="600">📦 Inventory</text>
+  <text x="76" y="157" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">📑 Orders</text>
+  <text x="76" y="195" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">🏢 Warehouses</text>
+  <text x="76" y="233" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">⚡ Dispatches</text>
+  <text x="76" y="271" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">⚙️ System RBAC</text>
+
+  <!-- Main Content Area -->
+  <!-- Stats row -->
+  <rect x="224" y="96" width="160" height="76" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="240" y="122" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Total Active SKUs</text>
+  <text x="240" y="152" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="700">14,892</text>
+  <text x="320" y="152" fill="#10b981" font-family="system-ui, sans-serif" font-size="11" font-weight="600">✓ Sync 99.9%</text>
+
+  <rect x="400" y="96" width="160" height="76" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="416" y="122" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Daily Orders Dispatched</text>
+  <text x="416" y="152" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="700">3,420</text>
+  <text x="496" y="152" fill="#3b82f6" font-family="system-ui, sans-serif" font-size="11" font-weight="600">+3.5x</text>
+
+  <rect x="576" y="96" width="160" height="76" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="592" y="122" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Locking Conflict Rate</text>
+  <text x="592" y="152" fill="#10b981" font-family="system-ui, sans-serif" font-size="20" font-weight="700">0.00%</text>
+
+  <!-- Data Table Mockup -->
+  <rect x="224" y="190" width="512" height="250" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <!-- Table Header -->
+  <rect x="224" y="190" width="512" height="36" rx="8" fill="#1e293b" />
+  <text x="244" y="213" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">SKU / ITEM</text>
+  <text x="390" y="213" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">LOCATION</text>
+  <text x="500" y="213" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">IN STOCK</text>
+  <text x="630" y="213" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">STATUS</text>
+
+  <!-- Row 1 -->
+  <line x1="224" y1="262" x2="736" y2="262" stroke="#1e293b" stroke-width="1" />
+  <text x="244" y="248" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="500">TX-9040 Core Sensor</text>
+  <text x="390" y="248" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Hub A (East)</text>
+  <text x="500" y="248" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="600">1,240</text>
+  <rect x="626" y="234" width="70" height="20" rx="10" fill="#065f46" />
+  <text x="661" y="248" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
+
+  <!-- Row 2 -->
+  <line x1="224" y1="300" x2="736" y2="300" stroke="#1e293b" stroke-width="1" />
+  <text x="244" y="286" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="500">ML-200 Interface Unit</text>
+  <text x="390" y="286" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Hub B (West)</text>
+  <text x="500" y="286" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="600">4,812</text>
+  <rect x="626" y="272" width="70" height="20" rx="10" fill="#065f46" />
+  <text x="661" y="286" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
+
+  <!-- Row 3 -->
+  <line x1="224" y1="338" x2="736" y2="338" stroke="#1e293b" stroke-width="1" />
+  <text x="244" y="324" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="500">ZX-Micro Controller</text>
+  <text x="390" y="324" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Hub A (East)</text>
+  <text x="500" y="324" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="600">312</text>
+  <rect x="626" y="310" width="70" height="20" rx="10" fill="#854d0e" />
+  <text x="661" y="324" fill="#fef08a" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">REORDER</text>
+
+  <!-- Row 4 -->
+  <line x1="224" y1="376" x2="736" y2="376" stroke="#1e293b" stroke-width="1" />
+  <text x="244" y="362" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="500">PW-Optic Fiber Patch</text>
+  <text x="390" y="362" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Hub C (Central)</text>
+  <text x="500" y="362" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="600">8,950</text>
+  <rect x="626" y="348" width="70" height="20" rx="10" fill="#065f46" />
+  <text x="661" y="362" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HEALTHY</text>
+
+  <rect x="244" y="398" width="180" height="28" rx="6" fill="#3b82f6" />
+  <text x="334" y="416" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">+ New Batch Dispatch</text>
+</svg>

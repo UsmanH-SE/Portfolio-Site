@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <filter id="avatarGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle with border -->
+  <circle cx="200" cy="200" r="190" fill="url(#avatarBg)" />
+  <circle cx="200" cy="200" r="190" stroke="url(#accentGlow)" stroke-width="4" stroke-opacity="0.6" />
+  
+  <!-- Subtle tech grid -->
+  <g opacity="0.15" stroke="#6366f1" stroke-width="1">
+    <circle cx="200" cy="200" r="130" stroke-dasharray="4 4" />
+    <circle cx="200" cy="200" r="165" stroke-dasharray="2 4" />
+  </g>
+
+  <!-- Shoulders & Body / Modern Blazer -->
+  <path d="M 85 365 C 85 295, 140 260, 200 260 C 260 260, 315 295, 315 365 Z" fill="url(#jacketGrad)" stroke="#334155" stroke-width="2" />
+  
+  <!-- Shirt collar -->
+  <path d="M 175 260 L 200 310 L 225 260 Z" fill="#ffffff" />
+  <path d="M 188 285 L 200 330 L 212 285 Z" fill="#6366f1" />
+
+  <!-- Neck -->
+  <rect x="180" y="210" width="40" height="60" rx="8" fill="#d4a373" />
+  <path d="M 180 240 Q 200 252 220 240 Z" fill="#bb8555" opacity="0.4" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="60" ry="72" fill="#e0ab76" />
+
+  <!-- Hair (Clean modern cut) -->
+  <path d="M 140 170 C 138 120, 160 95, 200 95 C 240 95, 262 120, 260 170 C 255 130, 230 115, 200 115 C 170 115, 145 130, 140 170 Z" fill="#1e1e24" />
+  <path d="M 138 175 C 138 140, 160 110, 205 105 C 250 100, 265 130, 262 175 C 265 160, 255 125, 230 115 C 190 100, 155 130, 138 175 Z" fill="#2d2d34" />
+
+  <!-- Beard / Groomed stubble -->
+  <path d="M 148 185 C 150 235, 175 252, 200 252 C 225 252, 250 235, 252 185 C 252 215, 235 242, 200 242 C 165 242, 148 215, 148 185 Z" fill="#1e1e24" opacity="0.85" />
+  
+  <!-- Eyes & Eyebrows -->
+  <rect x="162" y="152" width="26" height="5" rx="2.5" fill="#1e1e24" />
+  <rect x="212" y="152" width="26" height="5" rx="2.5" fill="#1e1e24" />
+
+  <ellipse cx="175" cy="172" rx="5" ry="6" fill="#1e1e24" />
+  <circle cx="176.5" cy="170" r="1.5" fill="#ffffff" />
+  <ellipse cx="225" cy="172" rx="5" ry="6" fill="#1e1e24" />
+  <circle cx="226.5" cy="170" r="1.5" fill="#ffffff" />
+
+  <!-- Nose -->
+  <path d="M 197 170 L 195 195 L 205 195" stroke="#c58e5a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Smile -->
+  <path d="M 186 215 Q 200 223 214 215" stroke="#78350f" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Tech badge pill floating -->
+  <g transform="translate(115, 335)" filter="url(#avatarGlow)">
+    <rect width="170" height="34" rx="17" fill="#090d16" stroke="#6366f1" stroke-width="1.5" />
+    <circle cx="132" cy="17" r="4.5" fill="#10b981" />
+    <text x="145" y="21" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Usman Haider • SE</text>
+  </g>
+</svg>
