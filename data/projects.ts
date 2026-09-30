@@ -24,6 +24,19 @@ export const projects: Project[] = [
     loomUrl: "https://www.loom.com/share/8f1bc6b3bdc04da99fe21f7ad861a3f0",
   },
   {
+    id: "ai-lead-intake-voice-receptionist",
+    title: "AI Lead Intake Voice Receptionist",
+    problem:
+      "Businesses miss potential leads because they cannot answer every call or handle routine inquiries 24/7.",
+    built:
+      "A voice AI agent acting as a virtual receptionist that talks to customers on the phone, collects their information, and handles lead intake duties automatically.",
+    result:
+      "Every call is answered promptly, leads are consistently collected and qualified, and receptionist tasks are fully automated.",
+    tags: ["Voice Agent", "AI Receptionist", "Lead Intake", "Call Handling"],
+    image: "/projects/lead-intake.png",
+    loomUrl: "https://www.loom.com/share/a90f19591eab4990a135cbfea01cc019",
+  },
+  {
     id: "content-repurposing",
     title: "Content Repurposing Agent",
     problem:
